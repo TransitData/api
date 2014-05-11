@@ -1,4 +1,3 @@
-transitdata-api
-===============
+# transitdata-api
 
-API serving up Metro Transit Schedule Data
+Transit Data REST API
