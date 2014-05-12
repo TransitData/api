@@ -1,0 +1,25 @@
+{
+  "name": "transitdata-api",
+  "version": "0.1.0",
+  "engines": {
+    "node": "0.10.24"
+  },
+  "description": "Transit Data REST API Service",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TargetRAD/transitdata-api.git"
+  },
+  "author": "twistedstream",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TargetRAD/transitdata-api/issues"
+  },
+  "homepage": "https://github.com/TargetRAD/transitdata-api",
+  "dependencies": {
+    "restify": "~2.7.0"
+  }
+}
