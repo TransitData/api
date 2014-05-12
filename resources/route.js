@@ -6,8 +6,9 @@ var Direction = require('../models/direction');
 var Stop = require('../models/stop');
 
 exports.register = function (server, baseRoute) {
-  server.get(baseRoute + '/routes', fetchAll);
-  server.get(baseRoute + '/routes/:route', fetchDetails);
+  // hard code region = Twin Cities
+  server.get(baseRoute + '/routes/twin_cities', fetchAll);
+  server.get(baseRoute + '/routes/twin_cities/:route', fetchDetails);
 };
 
 // Fetch all routes, returning summary info (id, description)
@@ -57,11 +58,11 @@ function fetchDetails (req, res, next) {
               };
             })
           });
-        } else {
-          res.send(new restify.ResourceNotFoundError("No such route!"));
-        }
 
-        next();
+          next();
+        } else {
+          next(new restify.ResourceNotFoundError("No such route!"));
+        }
       });
   })
   .catch(function (err) {
