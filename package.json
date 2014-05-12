@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/TargetRAD/transitdata-api",
   "dependencies": {
-    "restify": "~2.7.0"
+    "restify": "~2.7.0",
+    "mongoose": "~3.8.9",
+    "q": "~1.0.1",
+    "lodash": "~2.4.1"
   }
 }
