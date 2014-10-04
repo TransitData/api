@@ -1,3 +1,3 @@
-# transitdata-api
+# api
 
 Transit Data REST API!
