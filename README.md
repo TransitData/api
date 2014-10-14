@@ -1,4 +1,4 @@
-# TransiteData Web API
+# TransitData Web API
 
 This project contains the Web API component of the [TransitData API](http://dev.transitdata.io).
 
